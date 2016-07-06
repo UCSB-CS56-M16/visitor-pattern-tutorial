@@ -304,7 +304,7 @@ That is, the particular instance of `Animal` itself dictates how `speak()` is ha
 
 Now look again at the solution using `instanceof` to implement `interactWith`:
 
-```
+```java
 // Defined in Dog.java
 public class Dog implements Animal {
   public String speak() {
