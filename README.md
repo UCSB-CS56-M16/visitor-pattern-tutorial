@@ -612,7 +612,7 @@ public class Dog implements Animal {
 ```
 
 Here an [anonymous class](https://docs.oracle.com/javase/tutorial/java/javaOO/anonymousclasses.html) was used to minimize the amount of code written, though it isn't absolutely necessary.
-(Note that anonymous classes are just shorthand for creating an [inner class](https://docs.oracle.com/javase/tutorial/java/javaOO/innerclasses.html) without the need for a class name.)
+(Note that anonymous classes are just shorthand for creating an [inner class](https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html) without the need for a class name.)
 As shown, we call the `accept` method of the `other` `Animal` in `Dog`'s `interactWith` method.
 The `AnimalVisitor` passed implicitly assumes that we have a `Dog` interacting with something else.
 The different implementations of `visit` (namely, `visitDog`, `visitCat`, and `visitFish`) effectively case split on the different possibilities of `other`.
